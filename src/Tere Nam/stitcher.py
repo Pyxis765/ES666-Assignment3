@@ -5,11 +5,11 @@ import os
 import numpy as np
 import random
 
-class PanoramaStitcher():
+class PanaromaStitcher():
     def __init__(self):
         pass
 
-    def create_panorama_from_directory(self, directory):
+    def create_panaroma_from_directory(self, directory):
         image_path = directory
         image_files = sorted(glob.glob(image_path + os.sep + '*'))
         print('Found {} images for stitching.'.format(len(image_files)))
@@ -132,7 +132,7 @@ class PanoramaStitcher():
         return stitched_img
 
     def greet(self):
-        print('Hello from Ishva Patel!')
+        print('Hello from Naman Varshney!')
 
     def perform_action(self):
         return None
