@@ -9,10 +9,10 @@ class PanaromaStitcher():
     def __init__(self):
         pass
 
-    def create_panaroma_from_directory(self, directory):
-        image_path = directory
-        image_files = sorted(glob.glob(image_path + os.sep + '*'))
-        print('Found {} images for stitching.'.format(len(image_files)))
+    def make_panaroma_for_images_in(self, path):
+        imf = path
+        image_files = sorted(glob.glob(imf + os.sep + '*'))
+        print('Found {} Images for stitching'.format(len(image_files)))
 
         if len(image_files) < 2:
             print("Not enough images to stitch.")
